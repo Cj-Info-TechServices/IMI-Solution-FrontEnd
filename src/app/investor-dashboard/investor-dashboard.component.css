@@ -1,0 +1,19 @@
+.startup-display-container{
+    display: grid;
+    grid-template-columns: repeat(5, .6fr);
+    justify-items: center;
+    align-items: center;
+    gap: 12px 6px;
+}
+
+.startup-buz-bg{
+    background-color:rgb(179, 170, 170);
+    border-radius: 2px;
+    width: 75%;
+    text-align: center;
+}
+
+.business-item-link{
+    text-decoration: none;
+    color: white;
+}

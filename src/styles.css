@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+.company-logo-text{
+    font-weight: 400 !important;
+    /* font-size: 73% !important; */
+}
+
+.logo-text-descriptive-field{
+    font-weight: 400 !important;
+    font-size: 77.2% !important;
+}
+
+.brand-link .brand-image {
+    margin-left: .2rem !important;
+}
+
+.image{
+    padding-left: .3rem !important;
+}
+
+hr.sidebar-divider{
+    margin:0.6rem 0rem 0.6rem;
+    border-color: gray;
+    height: 0px;
+    width: auto;
+}
+
+.nav-link{
+    padding-left: 0.3rem !important;
+}
+
+.nav-sublink{
+    padding-left: 1.2rem !important;
+}
