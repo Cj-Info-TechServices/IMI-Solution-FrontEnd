@@ -33,8 +33,10 @@
                 <div class="startup-display-container">
                   <div *ngFor="let item of startupList | keyvalue" class="startup-buz-bg">    
                     <a href="#" class="business-item-link">
-                        <img src="assets/img/{{item.value}}" alt="{{item.value}}" width="150" height="150">
-                        <span><h6>{{item.key}}</h6></span>
+                        <img src="assets/img/{{item.value}}" alt="{{item.value}}" width="150" height="150" class="startup-images">
+                        <div>
+                          <p class="startup-image-names">{{item.key}}</p>
+                        </div>
                     </a>
                   </div>
                 </div>
@@ -45,18 +47,18 @@
                 <div class="row">
                   <div class="col-sm-3 col-6">
                     <div class="description-block border-right">
-                      <span class="description-percentage text-success"><i class="fas fa-caret-up"></i> 17%</span>
-                      <h5 class="description-header">$35,210.43</h5>
-                      <span class="description-text">TOTAL REVENUE</span>
+                      <span class="description-percentage text-success"><i class="fas fa-caret-up"></i>{{startupList.size}}%</span>
+                      <h5 class="description-header">{{startupList.size}}</h5>
+                      <span class="description-text">TOTAL MATCHES</span>
                     </div>
                     <!-- /.description-block -->
                   </div>
                   <!-- /.col -->
                   <div class="col-sm-3 col-6">
                     <div class="description-block border-right">
-                      <span class="description-percentage text-warning"><i class="fas fa-caret-left"></i> 0%</span>
+                      <!-- <span class="description-percentage text-warning"><i class="fas fa-caret-left"></i> 0%</span>
                       <h5 class="description-header">$10,390.90</h5>
-                      <span class="description-text">TOTAL COST</span>
+                      <span class="description-text">TOTAL COST</span> -->
                     </div>
                     <!-- /.description-block -->
                   </div>

@@ -1,7 +1,8 @@
 .startup-display-container{
     display: grid;
-    grid-template-columns: repeat(5, .6fr);
-    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
+    grid-auto-rows: 20rem;
+    justify-items:flex-start;
     align-items: center;
     gap: 12px 6px;
 }
@@ -9,7 +10,8 @@
 .startup-buz-bg{
     background-color:rgb(179, 170, 170);
     border-radius: 2px;
-    width: 75%;
+    width: 100%;
+    height: 100%;
     text-align: center;
 }
 
@@ -17,3 +19,22 @@
     text-decoration: none;
     color: white;
 }
+
+img.startup-images{
+    width: 100%;
+    height: 90%;
+}
+
+.startup-image-names{
+    padding-top: 0.3rem;
+}
+
+/* @media screen and (max-width: 768px) {
+    .startup-display-container{
+        display: grid; 
+        grid-template-columns: repeat(auto-fill, minmax(auto, .5fr));
+        justify-items:flex-start;
+        align-items: center;
+        gap: 12px 6px;
+    }
+} */

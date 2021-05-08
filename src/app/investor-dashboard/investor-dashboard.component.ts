@@ -17,7 +17,7 @@ export class InvestorDashboardComponent implements OnInit {
 
   ngOnInit(): void {
     this.startupList = this.sharedResourceService.getBusinessStartupList();
-    console.log(this.startupList);
+    console.log(this.startupList.size);
   }
 
 }
