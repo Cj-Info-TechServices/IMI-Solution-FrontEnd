@@ -10,6 +10,7 @@ export class InvestorDashboardComponent implements OnInit {
 
   sharedResourceService: any;
   startupList: any;
+  page: number = 1;
 
   constructor(injectedResourceService: SharedResourcesService) { 
     this.sharedResourceService = injectedResourceService;

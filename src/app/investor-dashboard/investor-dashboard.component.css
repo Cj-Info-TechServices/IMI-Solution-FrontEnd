@@ -29,12 +29,42 @@ img.startup-images{
     padding-top: 0.3rem;
 }
 
-/* @media screen and (max-width: 768px) {
-    .startup-display-container{
-        display: grid; 
-        grid-template-columns: repeat(auto-fill, minmax(auto, .5fr));
-        justify-items:flex-start;
-        align-items: center;
-        gap: 12px 6px;
+.description-block
+{
+    padding-top: 2rem;
+    float: right;
+}
+
+.description-text
+{
+    padding-right: 2rem;
+}
+
+
+.pagination-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: -7.5px;
+    margin-left: -7.5px;
+}
+
+ul.ngx-pagination{
+    padding-left: 0px !important;
+}
+
+@media screen and (max-width: 320px) {
+    .pagination-row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center !important;
+        margin-right: -7.5px;
+        margin-left: -7.5px;
     }
-} */
+
+    .ngx-pagination{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        margin-left: 0px !important;
+    }
+}
