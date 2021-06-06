@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonResourcesService } from '../common-resources.service';
 
 @Component({
   selector: 'app-match-preference',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MatchPreferenceComponent implements OnInit {
 
-  constructor() { }
+  startupCategoryDropDownItems: Array<string>;
+
+  constructor(private resourceService: CommonResourcesService) {
+    this.startupCategoryDropDownItems = new Array<string>();
+  }
 
   ngOnInit(): void {
+    this.startupCategoryDropDownItems = this.resourceService.getStartUpCategory();
+  }
+
+  updatePreference(){
+    alert("preference updated ...");
+  }
+
+  setChangeValue(selectedValue:any){
+    alert("changed value: " + selectedValue);
   }
 
 }
